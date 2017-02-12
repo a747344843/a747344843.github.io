@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>view-黑色时间轴个人博客模板</title>
+<meta name="keywords" content="黑色模板,个人网站模板,个人博客模板,博客模板,css3,html5,网站模板" />
+<meta name="description" content="这是一个有关黑色时间轴的css3 html5 网站模板" />
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/view.css" rel="stylesheet">
+<!-- 返回顶部调用 begin -->
+<link href="css/lrtk.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<!-- 返回顶部调用 end-->
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+  <nav id="nav">
+    <ul>
+      <li><a href="/" >网站首页</a></li>
+      <li><a href="/download/" target="_blank" title="个人博客模板">个人博客模板</a></li>
+      <li><a href="/book/" target="_blank" title="图书推荐">图书推荐</a></li>
+      <li><a href="/web/" target="_blank" title="网站建设">网站建设</a></li>
+      <li><a href="/newshtml5/" target="_blank" title="HTML5 / CSS3">HTML5 / CSS3</a></li>
+      <li><a href="/jstt/" target="_blank" title="技术探讨">技术探讨</a></li>
+      <li><a href="/news/s/" target="_blank" title="慢生活">慢生活</a></li>
+      <li><a href="/newstalk/" target="_blank" title="碎言碎语">碎言碎语</a></li>
+      <li><a href="/news/jsex/" target="_blank" title="JS 实例代码演示">JS实例</a></li>
+    </ul>
+    <script src="js/silder.js"></script><!--获取当前页导航 高亮显示标题--> 
+  </nav>
+</header>
+<!--header end-->
+<div id="mainbody">
+  <div class="blogs">
+    <div id="index_view">
+      <h2 class="t_nav"><a href="/">网站首页</a><a href="/">慢生活</a></h2>
+      <h1 class="c_titile">现在，我相信爱情！</h1>
+      <p class="box">发布时间：2013-07-25<span>编辑：DanceSmile</span>阅读（30）</p>
+      <ul>
+        <p> del key1 key2 ... Keyn
+作用: 删除1个或多个键
+返回值: 不存在的key忽略掉,返回真正删除的key的数量
+ 
+rename key newkey
+作用: 给key赋一个新的key名
+注:如果newkey已存在,则newkey的原值被覆盖
+ 
+renamenx key newkey  
+作用: 把key改名为newkey
+返回: 发生修改返回1,未发生修改返回0
+注: nx--> not exists, 即, newkey不存在时,作改名动作
+ 
+move key db
+Redis 127.0.0.1:6379[1]> select 2
+OK
+redis 127.0.0.1:6379[2]> keys *
+(empty list or set)
+redis 127.0.0.1:6379[2]> select 0
+OK
+redis 127.0.0.1:6379> keys *
+1) "name"
+2) "cc"
+3) "a"
+4) "b"
+redis 127.0.0.1:6379> move cc 2
+(integer) 1
+redis 127.0.0.1:6379> select 2
+OK
+redis 127.0.0.1:6379[2]> keys *
+1) "cc"
+redis 127.0.0.1:6379[2]> get cc
+"3"
+ 
+ 
+(注意:一个redis进程,打开了不止一个数据库,默认打开16个数据库,从0到15编号,
+如果想打开更多数据库,可以从配置文件修改)
+
+keys pattern 查询相应的key
+在redis里,允许模糊查询key
+有3个通配符 *, ? ,[]
+*: 通配任意多个字符
+?: 通配单个字符
+[]: 通配括号内的某1个字符
+redis 127.0.0.1:6379> flushdb
+OK
+redis 127.0.0.1:6379> keys *
+(empty list or set)
+redis 127.0.0.1:6379> mset one 1 two 2 three 3 four 4
+OK
+redis 127.0.0.1:6379> keys o*
+1) "one"
+redis 127.0.0.1:6379> key *o
+(error) ERR unknown command 'key'
+redis 127.0.0.1:6379> keys *o
+1) "two"
+redis 127.0.0.1:6379> keys ???
+1) "one"
+2) "two"
+redis 127.0.0.1:6379> keys on?
+1) "one"
+redis 127.0.0.1:6379> set ons yes
+OK
+redis 127.0.0.1:6379> keys on[eaw]
+1) "one"
+ 
+ 
+randomkey 返回随机key
+ 
+exists key
+判断key是否存在,返回1/0
+ 
+ 
+type key
+返回key存储的值的类型
+有string,link,set,order set, hash
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ttl key
+作用: 查询key的生命周期
+返回: 秒数
+ 
+注:对于不存在的key或已过期的key/不过期的key,都返回-1
+Redis2.8中,对于不存在的key,返回-2
+ 
+expire key 整型值
+作用: 设置key的生命周期,以秒为单位
+ 
+同理:
+pexpire key 毫秒数,设置生命周期
+pttl  key, 以毫秒返回生命周期
+ 
+ 
+persist key
+作用: 把指定key置为永久有效</p>
+      </ul>
+      <div class="share"> 
+        <!-- Baidu Button BEGIN -->
+        <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"> <span class="bds_more">分享到：</span> <a class="bds_qzone"></a> <a class="bds_tsina"></a> <a class="bds_tqq"></a> <a class="bds_renren"></a> <a class="bds_t163"></a> <a class="shareCount"></a> </div>
+        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585" ></script> 
+        <script type="text/javascript" id="bdshell_js"></script> 
+        <script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script> 
+        <!-- Baidu Button END --> 
+      </div>
+      <div class="otherlink">
+        <h2>相关文章</h2>
+        <ul>
+          <li><a href="/newstalk/mood/2013-07-24/518.html" title="我希望我的爱情是这样的">我希望我的爱情是这样的有种情谊，不是爱情，也算不得友情有种情谊，不是爱情，也算不得友情</a></li>
+          <li><a href="/newstalk/mood/2013-07-02/335.html" title="有种情谊，不是爱情，也算不得友情">有种情谊，不是爱情，也算不得友情有种情谊，不是爱情，也算不得友情有种情谊，不是爱情，也算不得友情</a></li>
+          <li><a href="/newstalk/mood/2013-07-01/329.html" title="世上最美好的爱情">世上最美好的爱情</a></li>
+          <li><a href="/news/read/2013-06-11/213.html" title="爱情没有永远，地老天荒也走不完">爱情没有永远，地老天荒也走不完</a></li>
+          <li><a href="/news/s/2013-06-06/24.html" title="爱情的背叛者">爱情的背叛者</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--bloglist end-->
+    <aside>
+      <div class="search">
+        <form class="searchform" method="get" action="#">
+          <input type="text" name="s" value="Search" onfocus="this.value=''" onblur="this.value='Search'">
+        </form>
+      </div>
+      <div class="sunnav">
+        <ul>
+          <li><a href="/web/" target="_blank" title="网站建设">网站建设</a></li>
+          <li><a href="/newshtml5/" target="_blank" title="HTML5 / CSS3">HTML5 / CSS3</a></li>
+          <li><a href="/jstt/" target="_blank" title="技术探讨">技术探讨</a></li>
+          <li><a href="/news/s/" target="_blank" title="慢生活">慢生活</a></li>
+        </ul>
+      </div>
+      <div class="tuijian">
+        <h2>栏目更新</h2>
+        <ol>
+          <li><span><strong>1</strong></span><a href="/">有一种思念，是淡淡的幸福,一个心情一行文字</a></li>
+          <li><span><strong>2</strong></span><a href="/">励志人生-要做一个潇洒的女人</a></li>
+          <li><span><strong>3</strong></span><a href="/">女孩都有浪漫的小情怀——浪漫的求婚词</a></li>
+          <li><span><strong>4</strong></span><a href="/">Green绿色小清新的夏天-个人博客模板</a></li>
+          <li><span><strong>5</strong></span><a href="/">女生清新个人博客网站模板</a></li>
+          <li><span><strong>6</strong></span><a href="/">Wedding-婚礼主题、情人节网站模板</a></li>
+          <li><span><strong>7</strong></span><a href="/">Column 三栏布局 个人网站模板</a></li>
+          <li><span><strong>8</strong></span><a href="/">时间煮雨-个人网站模板</a></li>
+          <li><span><strong>9</strong></span><a href="/">花气袭人是酒香—个人网站模板</a></li>
+        </ol>
+      </div>
+      <div class="toppic">
+        <h2>图文并茂</h2>
+        <ul>
+          <li><a href="/"><img src="images/k01.jpg">腐女不可怕，就怕腐女会画画！
+            <p>伤不起</p>
+            </a></li>
+          <li><a href="/"><img src="images/k02.jpg">问前任，你还爱我吗？无限戳中泪点~
+            <p>感兴趣</p>
+            </a></li>
+          <li><a href="/"><img src="images/k03.jpg">世上所谓幸福，就是一个笨蛋遇到一个傻瓜。
+            <p>喜欢</p>
+            </a></li>
+        </ul>
+      </div>
+      <div class="clicks">
+        <h2>热门点击</h2>
+        <ol>
+          <li><span><a href="/">慢生活</a></span><a href="/">有一种思念，是淡淡的幸福,一个心情一行文字</a></li>
+          <li><span><a href="/">爱情美文</a></span><a href="/">励志人生-要做一个潇洒的女人</a></li>
+          <li><span><a href="/">慢生活</a></span><a href="/">女孩都有浪漫的小情怀——浪漫的求婚词</a></li>
+          <li><span><a href="/">博客模板</a></span><a href="/">Green绿色小清新的夏天-个人博客模板</a></li>
+          <li><span><a href="/">女生个人博客</a></span><a href="/">女生清新个人博客网站模板</a></li>
+          <li><span><a href="/">Wedding</a></span><a href="/">Wedding-婚礼主题、情人节网站模板</a></li>
+          <li><span><a href="/">三栏布局</a></span><a href="/">Column 三栏布局 个人网站模板</a></li>
+          <li><span><a href="/">个人网站模板</a></span><a href="/">时间煮雨-个人网站模板</a></li>
+          <li><span><a href="/">古典风格</a></span><a href="/">花气袭人是酒香—个人网站模板</a></li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+  <!--blogs end--> 
+</div>
+<!--mainbody end-->
+<footer>
+  <div class="footer-mid">
+    <div class="links">
+      <h2>友情链接</h2>
+      <ul>
+        <li><a href="/">杨青个人博客</a></li>
+        <li><a href="http://www.3dst.com">3DST技术服务中心</a></li>
+      </ul>
+    </div>
+    <div class="visitors">
+      <h2>最新评论</h2>
+      <dl>
+        <dt><img src="images/s8.jpg">
+        <dt>
+        <dd>DanceSmile
+          <time>49分钟前</time>
+        </dd>
+        <dd>在 <a href="http://www.yangqq.com/jstt/bj/2013-07-28/530.html#comments" class="title">如果要学习web前端开发，需要学习什么？ </a>中评论：</dd>
+        <dd>文章非常详细，我很喜欢.前端的工程师很少，我记得几年前yahoo花高薪招聘前端也招不到</dd>
+      </dl>
+      <dl>
+        <dt><img src="images/s7.jpg">
+        <dt>
+        <dd>yisa
+          <time>2小时前</time>
+        </dd>
+        <dd>在 <a href="http://www.yangqq.com/news/s/2013-07-31/533.html#comments" class="title">芭蕾女孩的心事儿</a>中评论：</dd>
+        <dd>我手机里面也有这样一个号码存在</dd>
+      </dl>
+      <dl>
+        <dt><img src="images/s6.jpg">
+        <dt>
+        <dd>小林博客
+          <time>8月7日</time>
+        </dd>
+        <dd>在 <a href="http://www.yangqq.com/jstt/bj/2013-06-18/285.html#comments" class="title">如果个人博客网站再没有价值，你还会坚持吗？ </a>中评论：</dd>
+        <dd>博客色彩丰富，很是好看</dd>
+      </dl>
+    </div>
+    <section class="flickr">
+      <h2>摄影作品</h2>
+      <ul>
+        <li><a href="/"><img src="images/01.jpg"></a></li>
+        <li><a href="/"><img src="images/02.jpg"></a></li>
+        <li><a href="/"><img src="images/03.jpg"></a></li>
+        <li><a href="/"><img src="images/04.jpg"></a></li>
+        <li><a href="/"><img src="images/05.jpg"></a></li>
+        <li><a href="/"><img src="images/06.jpg"></a></li>
+        <li><a href="/"><img src="images/07.jpg"></a></li>
+        <li><a href="/"><img src="images/08.jpg"></a></li>
+        <li><a href="/"><img src="images/09.jpg"></a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="footer-bottom">
+    <p>Copyright 2013 Design by <a href="http://www.yangqq.com">DanceSmile</a></p>
+  </div>
+</footer>
+<!-- jQuery仿腾讯回顶部和建议 代码开始 -->
+<div id="tbox"> <a id="togbook" href="/e/tool/gbook/?bid=1"></a> <a id="gotop" href="javascript:void(0)"></a> </div>
+<!-- 代码结束 -->
+</body>
+</html>
